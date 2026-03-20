@@ -19,7 +19,6 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
 
-/* ── 전체 배경/폰트 */
 html, body, [class*="css"] {
     font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
 }
@@ -27,15 +26,11 @@ html, body, [class*="css"] {
     padding: 1.6rem 2.2rem 2rem;
     max-width: 1280px;
 }
-
-/* ── 사이드바 */
 [data-testid="stSidebar"] {
     background: #0f172a;
     border-right: 1px solid #1e293b;
 }
-[data-testid="stSidebar"] * {
-    color: #e2e8f0 !important;
-}
+[data-testid="stSidebar"] * { color: #e2e8f0 !important; }
 [data-testid="stSidebar"] .stSelectbox label,
 [data-testid="stSidebar"] .stSlider label,
 [data-testid="stSidebar"] .stRadio label {
@@ -45,11 +40,7 @@ html, body, [class*="css"] {
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
-[data-testid="stSidebar"] hr {
-    border-color: #1e293b;
-}
-
-/* ── KPI 카드 */
+[data-testid="stSidebar"] hr { border-color: #1e293b; }
 .kpi-card {
     background: #ffffff;
     border: 1px solid #e2e8f0;
@@ -59,192 +50,70 @@ html, body, [class*="css"] {
     box-shadow: 0 1px 3px rgba(0,0,0,.06);
 }
 .kpi-label {
-    color: #64748b;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 6px;
+    color: #64748b; font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px;
 }
 .kpi-value {
-    color: #0f172a;
-    font-size: 1.9rem;
-    font-weight: 700;
-    line-height: 1.1;
-    font-family: 'JetBrains Mono', monospace;
+    color: #0f172a; font-size: 1.9rem; font-weight: 700;
+    line-height: 1.1; font-family: 'JetBrains Mono', monospace;
 }
-.kpi-sub {
-    color: #94a3b8;
-    font-size: 0.75rem;
-    margin-top: 4px;
-}
-.kpi-badge-green  { color: #16a34a; font-weight: 700; }
-.kpi-badge-amber  { color: #d97706; font-weight: 700; }
-.kpi-badge-red    { color: #dc2626; font-weight: 700; }
-
-/* ── 섹션 헤더 */
+.kpi-sub { color: #94a3b8; font-size: 0.75rem; margin-top: 4px; }
+.kpi-badge-green { color: #16a34a; font-weight: 700; }
+.kpi-badge-amber { color: #d97706; font-weight: 700; }
+.kpi-badge-red   { color: #dc2626; font-weight: 700; }
 .section-title {
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #64748b;
-    margin: 0 0 12px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #f1f5f9;
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #64748b;
+    margin: 0 0 12px; padding-bottom: 8px; border-bottom: 2px solid #f1f5f9;
 }
-
-/* ── 출구 카드 */
 .exit-card {
-    background: #f8fafc;
-    border: 1.5px solid #e2e8f0;
-    border-radius: 10px;
-    padding: 14px 16px;
-    margin-bottom: 10px;
+    background: #f8fafc; border: 1.5px solid #e2e8f0;
+    border-radius: 10px; padding: 14px 16px; margin-bottom: 10px;
 }
-.exit-card.recommended {
-    background: #f0fdf4;
-    border-color: #86efac;
-}
-.exit-card-title {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin-bottom: 4px;
-}
-.exit-card-place {
-    font-size: 0.8rem;
-    color: #475569;
-    margin-bottom: 8px;
-}
+.exit-card.recommended { background: #f0fdf4; border-color: #86efac; }
+.exit-card-title { font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 4px; }
+.exit-card-place { font-size: 0.8rem; color: #475569; margin-bottom: 8px; }
 .exit-tag {
-    display: inline-block;
-    background: #e2e8f0;
-    color: #475569;
-    font-size: 0.7rem;
-    font-weight: 600;
-    border-radius: 5px;
-    padding: 2px 7px;
-    margin-right: 4px;
-    margin-top: 2px;
+    display: inline-block; background: #e2e8f0; color: #475569;
+    font-size: 0.7rem; font-weight: 600; border-radius: 5px;
+    padding: 2px 7px; margin-right: 4px; margin-top: 2px;
 }
-.exit-tag.green {
-    background: #dcfce7;
-    color: #15803d;
-}
-.exit-tag.blue {
-    background: #dbeafe;
-    color: #1d4ed8;
-}
-
-/* ── 혼잡도 바 */
+.exit-tag.green { background: #dcfce7; color: #15803d; }
+.exit-tag.blue  { background: #dbeafe; color: #1d4ed8; }
 .congestion-bar-bg {
-    background: #e2e8f0;
-    border-radius: 99px;
-    height: 8px;
-    margin-top: 6px;
-    overflow: hidden;
+    background: #e2e8f0; border-radius: 99px; height: 8px;
+    margin-top: 6px; overflow: hidden;
 }
-.congestion-bar-fill {
-    height: 100%;
-    border-radius: 99px;
-    transition: width .4s ease;
-}
-
-/* ── 열차 도착 배너 */
+.congestion-bar-fill { height: 100%; border-radius: 99px; transition: width .4s ease; }
 .train-banner {
-    background: #0f172a;
-    border-radius: 12px;
-    padding: 14px 20px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-bottom: 20px;
+    background: #0f172a; border-radius: 12px; padding: 14px 20px;
+    display: flex; align-items: center; gap: 24px; margin-bottom: 20px;
 }
 .train-direction {
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 2px;
+    font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2px;
 }
 .train-time {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #34d399;
+    font-size: 1.4rem; font-weight: 600; color: #34d399;
 }
 .train-separator { color: #334155; font-size: 1.6rem; }
 .train-notice {
-    flex: 1;
-    background: #1e293b;
-    border-radius: 8px;
-    padding: 8px 14px;
-    font-size: 0.8rem;
-    color: #fbbf24;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    flex: 1; background: #1e293b; border-radius: 8px;
+    padding: 8px 14px; font-size: 0.8rem; color: #fbbf24;
+    display: flex; align-items: center; gap: 8px;
 }
-
-/* ── 시간표 테이블 */
-.timetable-table th {
-    background: #f1f5f9;
-    color: #475569;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 10px 14px;
-}
-.timetable-table td {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.85rem;
-    color: #0f172a;
-    padding: 8px 14px;
-}
-
-/* ── 탭 스타일 오버라이드 */
 [data-testid="stTabs"] [role="tab"] {
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    padding: 8px 18px;
+    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; padding: 8px 18px;
 }
 [data-testid="stTabs"] [role="tab"][aria-selected="true"] {
-    color: #0f172a;
-    border-bottom: 2px solid #0f172a;
+    color: #0f172a; border-bottom: 2px solid #0f172a;
 }
-
-/* ── 사이드바 타이틀 */
-.sidebar-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 4px 0 20px;
-}
-.sidebar-logo-icon {
-    font-size: 1.8rem;
-}
-.sidebar-logo-text {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #f1f5f9 !important;
-    line-height: 1.2;
-}
-.sidebar-logo-sub {
-    font-size: 0.68rem;
-    color: #64748b !important;
-    font-weight: 400;
-}
-
-/* ── 정보 행 */
-.info-row {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 8px;
-    align-items: flex-start;
-}
+.sidebar-logo { display: flex; align-items: center; gap: 10px; padding: 4px 0 20px; }
+.sidebar-logo-icon { font-size: 1.8rem; }
+.sidebar-logo-text { font-size: 1rem; font-weight: 700; color: #f1f5f9 !important; line-height: 1.2; }
+.sidebar-logo-sub { font-size: 0.68rem; color: #64748b !important; font-weight: 400; }
+.info-row { display: flex; gap: 10px; margin-bottom: 8px; align-items: flex-start; }
 .info-row-icon { color: #64748b; font-size: 0.9rem; flex-shrink: 0; margin-top: 1px; }
 .info-row-label { font-size: 0.72rem; color: #94a3b8; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
 .info-row-value { font-size: 0.88rem; color: #1e293b; font-weight: 500; }
@@ -283,24 +152,26 @@ STATION_DB = {
         "headway": 4,
     },
     "exits": {
-        # 테헤란로 북쪽 (역삼동) — 사거리 동북쪽
-        "1번 출구":  {"장소": "특허청, 역삼세무서",      "door": "교대 1-1 / 역삼 10-4", "coord": [37.49815, 127.02985], "esc": True,  "bus": "광역 9404·9503"},
-        "2번 출구":  {"장소": "테헤란로, 주민센터",      "door": "교대 2-3 / 역삼 9-2",  "coord": [37.49770, 127.02962], "esc": False, "bus": "간선 146·341"},
-        # 강남역사거리 동쪽 (역삼동) — 강남대로 동편
-        "3번 출구":  {"장소": "강남역사거리, 역삼 방면", "door": "교대 2-4 / 역삼 9-1",  "coord": [37.49688, 127.02940], "esc": True,  "bus": "—"},
-        "4번 출구":  {"장소": "뱅뱅사거리",              "door": "교대 2-4 / 역삼 9-1",  "coord": [37.49630, 127.02908], "esc": True,  "bus": "—"},
-        # 강남역사거리 서쪽 (서초동) — 강남대로 서편 남쪽
-        "5번 출구":  {"장소": "서초동 우성아파트",        "door": "교대 5-2 / 역삼 6-3",  "coord": [37.49598, 127.02768], "esc": True,  "bus": "M버스 6427"},
-        "6번 출구":  {"장소": "강남역사거리, 서초 방면", "door": "교대 2-4 / 역삼 9-1",  "coord": [37.49648, 127.02750], "esc": True,  "bus": "—"},
-        # 강남대로 서편 북쪽 (서초동)
-        "7번 출구":  {"장소": "KDB산업은행",              "door": "교대 2-4 / 역삼 9-1",  "coord": [37.49720, 127.02728], "esc": True,  "bus": "—"},
-        "8번 출구":  {"장소": "삼성전자 서초사옥",        "door": "교대 8-3 / 역삼 3-2",  "coord": [37.49778, 127.02712], "esc": True,  "bus": "순환 41"},
-        # 테헤란로 북쪽 서편 (서초동)
-        "9번 출구":  {"장소": "메가박스, 서초동",         "door": "교대 9-2 / 역삼 2-3",  "coord": [37.49840, 127.02730], "esc": True,  "bus": "간선 740"},
-        "10번 출구": {"장소": "교보타워, 강남대로",       "door": "교대 10-4 / 역삼 1-1", "coord": [37.49862, 127.02768], "esc": False, "bus": "심야 N13"},
-        # 신분당선 구역 — 뱅뱅사거리 방향 (남쪽)
-        "11번 출구": {"장소": "강남역 사거리, 신분당",    "door": "교대 10-4 / 역삼 1-1", "coord": [37.49558, 127.02832], "esc": True,  "bus": "직행 1100·2000"},
-        "12번 출구": {"장소": "국립어린이청소년도서관",   "door": "교대 7-3 / 역삼 4-2",  "coord": [37.49582, 127.02888], "esc": True,  "bus": "간선 421"},
+        # ── 역삼동 (강남대로 동편) ──────────────────────────────────────────────
+        # 1·2번: 테헤란로 북쪽, 역삼동 방향
+        "1번 출구":  {"장소": "특허청, 역삼세무서",      "door": "교대 1-1 / 역삼 10-4", "coord": [37.49750, 127.02900], "esc": True,  "bus": "광역 9404·9503"},
+        "2번 출구":  {"장소": "테헤란로, 주민센터",      "door": "교대 2-3 / 역삼 9-2",  "coord": [37.49729, 127.02816], "esc": False, "bus": "간선 146·341"},
+        # 3·4번: 강남대로 동편 남쪽 (신분당선 환승 구역)
+        "3번 출구":  {"장소": "강남역사거리, 역삼 방면", "door": "교대 2-4 / 역삼 9-1",  "coord": [37.49635, 127.02865], "esc": True,  "bus": "—"},
+        "4번 출구":  {"장소": "뱅뱅사거리 (신분당선)",   "door": "교대 2-4 / 역삼 9-1",  "coord": [37.49446, 127.02959], "esc": True,  "bus": "—"},
+        # ── 서초동 (강남대로 서편) ──────────────────────────────────────────────
+        # 5·6번: 강남대로 서편 남쪽
+        "5번 출구":  {"장소": "서초동 우성아파트",        "door": "교대 5-2 / 역삼 6-3",  "coord": [37.49500, 127.02700], "esc": True,  "bus": "M버스 6427"},
+        "6번 출구":  {"장소": "강남역사거리, 서초 방면", "door": "교대 2-4 / 역삼 9-1",  "coord": [37.49642, 127.02779], "esc": True,  "bus": "—"},
+        # 7·8·9·10번: 강남대로 서편 북쪽
+        "7번 출구":  {"장소": "KDB산업은행",              "door": "교대 2-4 / 역삼 9-1",  "coord": [37.49730, 127.02705], "esc": True,  "bus": "—"},
+        "8번 출구":  {"장소": "삼성전자 서초사옥",        "door": "교대 8-3 / 역삼 3-2",  "coord": [37.49760, 127.02665], "esc": True,  "bus": "순환 41"},
+        "9번 출구":  {"장소": "메가박스, 서초동",         "door": "교대 9-2 / 역삼 2-3",  "coord": [37.49781, 127.02650], "esc": True,  "bus": "간선 740"},
+        "10번 출구": {"장소": "교보타워, 강남대로",       "door": "교대 10-4 / 역삼 1-1", "coord": [37.49924, 127.02636], "esc": False, "bus": "심야 N13"},
+        # ── 테헤란로 북쪽 ───────────────────────────────────────────────────────
+        # 11·12번: 테헤란로 북쪽 (역삼동·서초동 경계)
+        "11번 출구": {"장소": "강남역 사거리",            "door": "교대 10-4 / 역삼 1-1", "coord": [37.49870, 127.02820], "esc": True,  "bus": "직행 1100·2000"},
+        "12번 출구": {"장소": "국립어린이청소년도서관",   "door": "교대 7-3 / 역삼 4-2",  "coord": [37.49882, 127.02971], "esc": True,  "bus": "간선 421"},
     },
     "notice": "⚠  2호선 외선순환 차량 고장으로 약 5분 지연 운행 중",
 }
@@ -328,21 +199,15 @@ def next_train_minutes():
 
 
 def congestion_color(ratio: float) -> str:
-    if ratio < 0.40:
-        return "#22c55e"   # 초록
-    elif ratio < 0.65:
-        return "#f59e0b"   # 노랑
-    else:
-        return "#ef4444"   # 빨강
+    if ratio < 0.40:  return "#22c55e"
+    elif ratio < 0.65: return "#f59e0b"
+    else:              return "#ef4444"
 
 
 def congestion_label(ratio: float) -> str:
-    if ratio < 0.40:
-        return ("여유", "kpi-badge-green")
-    elif ratio < 0.65:
-        return ("보통", "kpi-badge-amber")
-    else:
-        return ("혼잡", "kpi-badge-red")
+    if ratio < 0.40:  return ("여유", "kpi-badge-green")
+    elif ratio < 0.65: return ("보통", "kpi-badge-amber")
+    else:              return ("혼잡", "kpi-badge-red")
 
 
 # ── 사이드바 ──────────────────────────────────────────────────────────────────
@@ -362,8 +227,7 @@ with st.sidebar:
     weekdays = list(WEEKDAY_WEIGHTS.keys())
     today_idx = min(datetime.now().weekday(), 6)
     current_day = st.selectbox("요일", weekdays, index=today_idx)
-    current_hour = st.slider("시간대", 4, 23, datetime.now().hour,
-                             format="%d시")
+    current_hour = st.slider("시간대", 4, 23, datetime.now().hour, format="%d시")
     selected_exit = st.selectbox("목표 출구", list(STATION_DB["exits"].keys()))
     weather = st.radio("날씨", ["☀️ 맑음", "🌧️ 비 / 눈"])
 
@@ -384,31 +248,31 @@ if data is None:
     st.stop()
 
 # 계산
-day_weight = WEEKDAY_WEIGHTS[current_day]
+day_weight   = WEEKDAY_WEIGHTS[current_day]
 weather_mult = 1.25 if "비" in weather else 1.0
-col_off = f"{current_hour:02d}시-{current_hour + 1:02d}시 하차인원"
-base_count = safe_int(data[col_off])
+col_off      = f"{current_hour:02d}시-{current_hour + 1:02d}시 하차인원"
+base_count   = safe_int(data[col_off])
 congestion_ratio = min((base_count / 150_000) * day_weight * weather_mult, 1.0)
-exit_time = (4.0 + congestion_ratio * 12) * weather_mult
-is_crowded = congestion_ratio > 0.65
+exit_time    = (4.0 + congestion_ratio * 12) * weather_mult
+is_crowded   = congestion_ratio > 0.65
 
 # 우회 경로 계산
 target_coords = np.array(STATION_DB["exits"][selected_exit]["coord"])
-best_detour = selected_exit
-detour_time = exit_time
+best_detour   = selected_exit
+detour_time   = exit_time
 
 if is_crowded:
     candidates = []
     for name, info in STATION_DB["exits"].items():
         if name == selected_exit:
             continue
-        dist = np.linalg.norm(target_coords - np.array(info["coord"]))
+        dist  = np.linalg.norm(target_coords - np.array(info["coord"]))
         score = dist * (0.5 if ("비" in weather and info["esc"]) else 1.0)
         candidates.append((name, score))
     best_detour = sorted(candidates, key=lambda x: x[1])[0][0]
     detour_time = (4.0 + congestion_ratio * 0.5 * 12) * weather_mult + 1.0
 
-time_saved = exit_time - detour_time
+time_saved  = exit_time - detour_time
 cong_label, cong_cls = congestion_label(congestion_ratio)
 next_inner, next_outer = next_train_minutes()
 
@@ -446,9 +310,8 @@ st.markdown(f"""
 
 # ── KPI 카드 행 ───────────────────────────────────────────────────────────────
 k1, k2, k3, k4 = st.columns(4)
-
 bar_color = congestion_color(congestion_ratio)
-bar_pct = int(congestion_ratio * 100)
+bar_pct   = int(congestion_ratio * 100)
 
 with k1:
     st.markdown(f"""
@@ -516,63 +379,105 @@ tab_nav, tab_info = st.tabs(["🗺  동선 최적화", "🏢  역 정보 & 시�
 with tab_nav:
     col_map, col_cards = st.columns([3, 2], gap="large")
 
-    # 지도
     with col_map:
         st.markdown('<div class="section-title">출구 위치 지도</div>', unsafe_allow_html=True)
 
-        center = [37.4979, 127.0276]
+        # 강남역 사거리 중심 (2호선 역 중심)
+        center = [37.49780, 127.02762]
+
         m = folium.Map(
-            location=center, zoom_start=17,
+            location=center, zoom_start=16,
             tiles="https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
             attr="Google",
         )
 
-        # 모든 출구 작은 마커
+        def make_exit_icon(num_label: str, color: str, text_color: str = "#ffffff", size: int = 28) -> folium.DivIcon:
+            font_size = 10 if len(num_label) <= 2 else 9
+            return folium.DivIcon(
+                html=f'''
+                <div style="
+                    width:{size}px; height:{size}px;
+                    background:{color};
+                    border-radius:50%;
+                    border: 2.5px solid #ffffff;
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+                    display:flex; align-items:center; justify-content:center;
+                    font-family:Arial,sans-serif;
+                    font-size:{font_size}px; font-weight:700;
+                    color:{text_color};
+                    line-height:1;
+                ">{num_label}</div>''',
+                icon_size=(size, size),
+                icon_anchor=(size // 2, size // 2),
+            )
+
+        # 일반 출구 마커
         for name, info in STATION_DB["exits"].items():
-            if name in (selected_exit, best_detour if is_crowded else None):
+            num = name.replace("번 출구", "")
+            if name == selected_exit or (is_crowded and name == best_detour):
                 continue
-            folium.CircleMarker(
+            folium.Marker(
                 location=info["coord"],
-                radius=5,
-                color="#94a3b8",
-                fill=True,
-                fill_color="#94a3b8",
-                fill_opacity=0.6,
-                tooltip=name,
+                tooltip=f"{name} — {info['장소']}",
+                popup=folium.Popup(
+                    f"<b>{name}</b><br>{info['장소']}<br>버스: {info['bus']}",
+                    max_width=180,
+                ),
+                icon=make_exit_icon(num, "#64748b"),
             ).add_to(m)
 
         # 선택 출구 (파랑)
         sel_coord = STATION_DB["exits"][selected_exit]["coord"]
+        sel_num   = selected_exit.replace("번 출구", "")
         folium.PolyLine(
-            [center, sel_coord], color="#3b82f6", weight=3, opacity=0.7, dash_array="6"
+            [center, sel_coord], color="#3b82f6", weight=3, opacity=0.8, dash_array="6"
         ).add_to(m)
         folium.Marker(
-            sel_coord,
-            popup=f"선택: {selected_exit}",
-            icon=folium.Icon(color="blue", icon="info-sign"),
+            location=sel_coord,
+            tooltip=f"선택: {selected_exit}",
+            popup=folium.Popup(
+                f"<b>{selected_exit} (선택)</b><br>{STATION_DB['exits'][selected_exit]['장소']}<br>"
+                f"하차문: {STATION_DB['exits'][selected_exit]['door']}<br>"
+                f"버스: {STATION_DB['exits'][selected_exit]['bus']}",
+                max_width=200,
+            ),
+            icon=make_exit_icon(sel_num, "#2563eb", size=34),
         ).add_to(m)
 
-        # 우회 경로 (초록)
+        # 우회 출구 (초록)
         if is_crowded and best_detour != selected_exit:
             det_coord = STATION_DB["exits"][best_detour]["coord"]
+            det_num   = best_detour.replace("번 출구", "")
             folium.PolyLine(
-                [center, det_coord], color="#22c55e", weight=5
+                [center, det_coord], color="#16a34a", weight=4
             ).add_to(m)
             folium.Marker(
-                det_coord,
-                popup=f"추천: {best_detour}",
-                icon=folium.Icon(color="green", icon="star"),
+                location=det_coord,
+                tooltip=f"추천: {best_detour}",
+                popup=folium.Popup(
+                    f"<b>{best_detour} (추천)</b><br>{STATION_DB['exits'][best_detour]['장소']}<br>"
+                    f"하차문: {STATION_DB['exits'][best_detour]['door']}<br>"
+                    f"버스: {STATION_DB['exits'][best_detour]['bus']}",
+                    max_width=200,
+                ),
+                icon=make_exit_icon(det_num, "#16a34a", size=34),
             ).add_to(m)
 
-        # 역 중심
-        folium.CircleMarker(
+        # 역 중심 마커
+        folium.Marker(
             location=center,
-            radius=8,
-            color="#0f172a",
-            fill=True,
-            fill_color="#0f172a",
-            fill_opacity=1,
-            tooltip="강남역",
+            tooltip="강남역 (2호선)",
+            icon=folium.DivIcon(
+                html='''<div style="
+                    width:18px; height:18px;
+                    background:#0f172a;
+                    border-radius:50%;
+                    border:3px solid #ffffff;
+                    box-shadow:0 2px 8px rgba(0,0,0,0.5);
+                "></div>''',
+                icon_size=(18, 18),
+                icon_anchor=(9, 9),
+            ),
         ).add_to(m)
 
         st_folium(m, width="100%", height=440, returned_objects=[])
@@ -581,9 +486,8 @@ with tab_nav:
     with col_cards:
         st.markdown('<div class="section-title">출구 상세 정보</div>', unsafe_allow_html=True)
 
-        # 선택 출구
         sel_info = STATION_DB["exits"][selected_exit]
-        esc_tag = '<span class="exit-tag green">에스컬레이터</span>' if sel_info["esc"] else "<!-- no esc -->"
+        esc_tag  = '<span class="exit-tag green">에스컬레이터</span>' if sel_info["esc"] else "<!-- no esc -->"
         st.markdown(f"""
         <div class="exit-card">
             <div class="exit-card-title">📍 {selected_exit} <span style="font-size:.75rem;color:#64748b;font-weight:400;">선택</span></div>
@@ -596,10 +500,9 @@ with tab_nav:
         </div>
         """, unsafe_allow_html=True)
 
-        # 우회 출구
         if is_crowded and best_detour != selected_exit:
             det_info = STATION_DB["exits"][best_detour]
-            det_esc = '<span class="exit-tag green">에스컬레이터</span>' if det_info["esc"] else "<!-- no esc -->"
+            det_esc  = '<span class="exit-tag green">에스컬레이터</span>' if det_info["esc"] else "<!-- no esc -->"
             st.markdown(f"""
             <div class="exit-card recommended">
                 <div class="exit-card-title">🚀 {best_detour}
@@ -626,7 +529,6 @@ with tab_nav:
         st.markdown("<br>", unsafe_allow_html=True)
         st.markdown('<div class="section-title">시간대별 혼잡도 추이</div>', unsafe_allow_html=True)
 
-        # 미니 혼잡도 차트
         hours_range = list(range(5, 24))
         counts = []
         for h in hours_range:
@@ -635,12 +537,11 @@ with tab_nav:
                 counts.append(safe_int(data[col]))
             except Exception:
                 counts.append(0)
-        
+
         chart_df = pd.DataFrame({
-            "시간": [f"{h}시" for h in hours_range],
+            "시간":   [f"{h}시" for h in hours_range],
             "하차인원": counts,
         })
-        
         st.bar_chart(chart_df.set_index("시간"), height=180, color="#3b82f6")
 
 
@@ -653,11 +554,11 @@ with tab_info:
 
         gen = STATION_DB["general"]
         for icon, label, val in [
-            ("📍", "주소", gen["주소"]),
-            ("📞", "대표 전화", gen["전화번호"]),
+            ("📍", "주소",       gen["주소"]),
+            ("📞", "대표 전화",  gen["전화번호"]),
             ("📦", "분실물 센터", gen["분실물센터"]),
-            ("🏗️", "편의 시설", gen["시설"]),
-            ("🕐", "배차 간격", f"약 {gen['headway']}분"),
+            ("🏗️", "편의 시설",  gen["시설"]),
+            ("🕐", "배차 간격",  f"약 {gen['headway']}분"),
         ]:
             st.markdown(f"""
             <div class="info-row">
@@ -672,15 +573,10 @@ with tab_info:
         st.markdown("<br>", unsafe_allow_html=True)
         st.markdown('<div class="section-title">첫차 · 막차</div>', unsafe_allow_html=True)
 
-        timetable_df = pd.DataFrame(
-            gen["first_last"],
-            index=["첫차", "막차"],
-        ).T.reset_index()
+        timetable_df = pd.DataFrame(gen["first_last"], index=["첫차", "막차"]).T.reset_index()
         timetable_df.columns = ["구분", "첫차", "막차"]
         st.dataframe(
-            timetable_df,
-            use_container_width=True,
-            hide_index=True,
+            timetable_df, use_container_width=True, hide_index=True,
             column_config={
                 "구분": st.column_config.TextColumn("운행 구분", width="large"),
                 "첫차": st.column_config.TextColumn("첫차"),
@@ -694,22 +590,19 @@ with tab_info:
         exit_rows = []
         for name, info in STATION_DB["exits"].items():
             exit_rows.append({
-                "출구": name,
-                "주요 장소": info["장소"],
-                "연계 버스": info["bus"],
+                "출구":       name,
+                "주요 장소":  info["장소"],
+                "연계 버스":  info["bus"],
                 "에스컬레이터": "✅" if info["esc"] else "—",
             })
 
         exit_df = pd.DataFrame(exit_rows)
         st.dataframe(
-            exit_df,
-            use_container_width=True,
-            hide_index=True,
-            height=460,
+            exit_df, use_container_width=True, hide_index=True, height=460,
             column_config={
-                "출구": st.column_config.TextColumn("출구", width="small"),
-                "주요 장소": st.column_config.TextColumn("주요 장소", width="large"),
-                "연계 버스": st.column_config.TextColumn("연계 버스"),
+                "출구":       st.column_config.TextColumn("출구", width="small"),
+                "주요 장소":  st.column_config.TextColumn("주요 장소", width="large"),
+                "연계 버스":  st.column_config.TextColumn("연계 버스"),
                 "에스컬레이터": st.column_config.TextColumn("에스컬", width="small"),
             },
         )
